@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="491dp"
+            android:layout_height="357dp"
+            android:layout_marginTop="128dp"
+            android:layout_weight="0.3"
+            android:contentDescription="cameraView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:background="@android:color/transparent"
+            android:rotation="90"
+            android:text=""
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/icons8_chevron_left_50"
+            app:iconSize="100dp"
+            app:iconTint="?attr/icon_color"
+            app:layout_constraintBottom_toTopOf="@+id/stopCar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/turnLeft"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:background="@android:color/transparent"
+            android:text=""
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/icons8_chevron_left_50"
+            app:iconSize="100dp"
+            app:iconTint="?attr/icon_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stopCar"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.829"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/turnRight"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:background="@android:color/transparent"
+            android:rotation="180"
+            android:text=""
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/icons8_chevron_left_50"
+            app:iconSize="100dp"
+            app:iconTint="?attr/icon_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/stopCar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.83"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/reverse"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:background="@android:color/transparent"
+            android:rotation="270"
+            android:text=""
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/icons8_chevron_left_50"
+            app:iconSize="100dp"
+            app:iconTint="?attr/icon_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stopCar"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/stopCar"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/pikpng_com_stop_png_439828"
+            android:text=""
+            app:backgroundTint="@android:color/transparent"
+            app:iconTint="?attr/icon_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.831" />
+
+
+        <Switch
+            android:id="@+id/autoMode"
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="56dp"
+            android:paddingHorizontal="40dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:switchMinWidth="60dp"
+            android:text="Auto drive"
+            android:textColor="?attr/text_color"
+            android:textSize="20sp"
+            android:thumbTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="115dp"
+            android:layout_height="105dp"
+            android:foreground="@drawable/speedometer_colour"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.594" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="115dp"
+            android:layout_height="100dp"
+            android:autoSizeTextType="none"
+            android:clickable="true"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textColor="?attr/text_color"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.596" />
+
+        <ImageView
+            android:id="@+id/speechMic"
+            android:layout_width="96dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="56dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/turnLeft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.836"
+            app:srcCompat="@drawable/google_voice" />
+
+        <TextView
+            android:id="@+id/travelledDistance"
+            android:layout_width="319dp"
+            android:layout_height="46dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="?attr/text_color"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/forward"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.622"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.448" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="71dp"
+            android:layout_height="47dp"
+            android:background="@android:color/transparent"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:icon="@drawable/icons8_plus_48"
+            app:iconSize="65dp"
+            app:iconTint="?attr/icon_color"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/integer_number"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.777" />
+
+        <TextView
+            android:id="@+id/integer_number"
+            android:layout_width="71dp"
+            android:layout_height="45dp"
+            android:text="0"
+            android:textColor="?attr/text_color"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/plus"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/minus"
+            app:layout_constraintTop_toBottomOf="@+id/maxSpeed"
+            app:layout_constraintVertical_bias="0.305" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="79dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:icon="@drawable/ic_baseline_minimize_48"
+            app:iconSize="80dp"
+            app:iconTint="?attr/icon_color"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/integer_number"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/autoMode"
+            app:layout_constraintTop_toBottomOf="@+id/maxSpeed" />
+
+        <TextView
+            android:id="@+id/maxSpeed"
+            android:layout_width="160dp"
+            android:layout_height="36dp"
+            android:text="Max Speed"
+            android:textColor="?attr/text_color"
+            android:textSize="30dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/minus"
+            app:layout_constraintEnd_toStartOf="@+id/plus"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toEndOf="@+id/minus"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

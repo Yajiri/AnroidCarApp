@@ -1,0 +1,12 @@
+# Blender MTL File: 'PBD Low Poly Rocks 3D Model.blend'
+# Material Count: 1
+
+newmtl Material.001
+Ns 0.000000
+Ka 0.583062 0.583062 0.583062
+Kd 0.117397 0.126773 0.157435
+Ks 0.109121 0.109121 0.109121
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
